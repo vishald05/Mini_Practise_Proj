@@ -1,0 +1,27 @@
+#Mainb{
+    padding-left: 30%;
+    padding-right: 30%;
+    border: 50px;
+    border-color: black;
+}
+h1{
+    padding: 5%;
+}
+#Val{
+    padding-left: 15%;
+    font-size: 50px;
+}
+#dec,#inc{
+    padding: 3%;
+    color: white;
+    background-color: blue;
+    border-radius: 8%;
+}
+#dec:hover,#inc:hover{
+    background-color: rgba(0, 0, 255, 0.433);
+    transition: 0.2s;
+}
+#reset{
+    background-color: red;
+    padding: 2%;
+}

@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(BGimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: left ;
+    backdrop-filter: blur(4px);
+}
+
+#clock_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock{
+    font-family:monospace;
+    color: cornsilk;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 17px;
+    font-size: 100px;
+    padding: 10px;
+}
+
+#converter{
+    height: 10%;
+    width: 28%;
+    font-size: 120%;
+    font-family:monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+    background-color: rgb(226, 192, 148);
+    
+}
+
+#converter:hover{
+    transform: scale(1.05);
+    background-color: burlywood;
+}

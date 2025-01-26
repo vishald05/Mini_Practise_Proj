@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #93c5fd, #a5b4fc);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Main Box Styling */
+#Mainb {
+    background: #e0f2fe;
+    border: 2px solid #60a5fa;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.5s ease-out;
+}
+
+#Mainb:hover {
+    transform: scale(1.05);
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #1e3a8a;
+}
+
+/* Input Styling */
+input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #60a5fa;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 10px #60a5fa;
+}
+
+/* Radio Button Styling */
+label {
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #60a5fa;
+}
+
+/* Hover Effect on Labels */
+label:hover {
+    background-color: #60a5fa;
+    color: #fff;
+}
+
+/* Selected Radio Button Styling */
+input[type="radio"]:checked + label {
+    background-color: #2563eb;
+    color: #fff;
+    box-shadow: 0 0 8px #2563eb;
+}
+
+/* Button Styling */
+button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    #Mainb {
+        width: 90%;
+    }
+}

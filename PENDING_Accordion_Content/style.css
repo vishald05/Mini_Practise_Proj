@@ -1,0 +1,22 @@
+body{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.Container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Box{
+    border: solid hsl(0, 0%, 5%) 2px;
+    background-color: hsl(0, 0%, 20%);
+    width: 600px;
+    cursor: pointer;
+}
+
+.Box:hover{
+    background-color: hsl(0, 0%, 30%);
+}

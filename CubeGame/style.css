@@ -1,0 +1,12 @@
+body{
+    background-color: hsl(0, 0%, 5%);
+    margin: 0;
+}
+
+#Box{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    position: relative;
+    transition: 0.5s;
+}

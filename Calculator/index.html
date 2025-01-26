@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculator">
+        <input id="Display" readonly>
+        <div id="Buttons">
+            <div class="row">
+                <button onclick="cleardisplay()" style="background-color: rgb(181, 29, 29);">AC</button>
+                <button onclick="deletelast()" style="background-color: rgb(181, 29, 29);">del</button>
+                <button onclick="addto('%')" style="background-color: rgb(120, 181, 29);">%</button>
+                <button onclick="addto('/')" style="background-color: rgb(120, 181, 29);">/</button>
+            </div>
+            <div class="row">
+                <button onclick="addto('7')">7</button>
+                <button onclick="addto('8')">8</button>
+                <button onclick="addto('9')">9</button>
+                <button onclick="addto('*')"style="background-color: rgb(120, 181, 29);">x</button>
+            </div>
+            <div class="row">
+                <button onclick="addto('4')">4</button>
+                <button onclick="addto('5')">5</button>
+                <button onclick="addto('6')">6</button>
+                <button onclick="addto('-')" style="background-color: rgb(120, 181, 29);">-</button>
+            </div>
+            <div class="row">
+                <button onclick="addto('1')">1</button>
+                <button onclick="addto('2')">2</button>
+                <button onclick="addto('3')">3</button>
+                <button onclick="addto('+')" style="background-color: rgb(120, 181, 29);">+</button>
+            </div>
+            <div class="row">
+                <button onclick="dummy()">✨</button>
+                <button onclick="addto('0')">0</button>
+                <button onclick="addto('.')">.</button>
+                <button onclick="Calculate()" id="equals" style="background-color: rgb(29, 34, 181);">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
