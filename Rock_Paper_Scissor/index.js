@@ -1,8 +1,8 @@
 let opkey = document.querySelectorAll(".opkey");
-let player = document.getElementById("player");
 let computer = document.getElementById("computer");
 let result = document.getElementById("result");
 let box = document.querySelectorAll(".MainB");
+let compchoicetext = document.getElementById("compchoicetext");
 
 opkey.forEach(EL => {
     EL.addEventListener("mouseover", event =>{
@@ -31,63 +31,62 @@ function comp_choice(){
 
 function played(event){
     let now = event.target.textContent;
+    compchoicetext.textContent = "Computer Choice";
+    computer.style.padding = "20px";
     let Cchoice = arr[comp_choice()];
     console.log(Cchoice);
+    
     if(now === '🪨'){
-        player.textContent = "You have Choosen Rock";
         if(Cchoice === '🪨'){
-            changes("Rock","Its a Tie");
+            changes('🪨',"Its a Tie");
             tie();
         }
         if(Cchoice === '📃'){
-            changes("Paper","You Lose");
+            changes('📃',"You Lose");
             Ulose();
         }
         if(Cchoice === '✂️'){
-            changes("Scissors","You Win");
+            changes('✂️',"You Win");
             Uwin();
         }    
     }
     if(now === '📃'){
-        player.textContent = "You have Choosen Paper";
         if(Cchoice === '🪨'){
-            changes("Rock","You Win");
+            changes('🪨',"You Win");
             Uwin();
         }
         if(Cchoice === '📃'){
-            changes("Paper","Its a Tie");
+            changes('📃',"Its a Tie");
             tie();
         }
         if(Cchoice === '✂️'){
-            changes("Scissors","You Lose");
+            changes('✂️',"You Lose");
             Ulose();
         }  
 
     }
     if(now === '✂️'){
-        player.textContent = "You have Choosen Scissors";
         if(Cchoice === '🪨'){
-            changes("Rock","You Lose");
+            changes('🪨',"You Lose");
             Ulose();
         }
         if(Cchoice === '📃'){
-            changes("Paper","You Win");
+            changes('📃',"You Win");
             Uwin();
         }
         if(Cchoice === '✂️'){
-            changes("Scissors","Its a Tie");  
+            changes('✂️',"Its a Tie");  
             tie(); 
         }  
     }
 }
-// box.style.backgroundColor = "Green";
 function Uwin(){
     box.forEach(EL =>{
         if(EL.classList.contains("losebg"))
             EL.classList.remove("losebg");
         EL.classList.add("winbg");
         result.textContent = "You WIN!!!";
-        setTimeout(tie, 2000);
+        setTimeout(tie, 1500);
     })
 }
 
@@ -97,7 +96,7 @@ function Ulose(){
             EL.classList.remove("winbg");
         EL.classList.add("losebg");
         result.textContent = "You LOSE 🥲";
-        setTimeout(tie, 2000);
+        setTimeout(tie, 1500);
     })
 }
 
@@ -111,7 +110,8 @@ function tie(){
 
     })
 }
+
 function changes(c, res){
-    computer.textContent = "Computer have Choosen " + c;
+    computer.textContent = c;
     result.textContent = res;
 }
