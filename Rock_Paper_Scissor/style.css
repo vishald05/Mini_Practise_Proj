@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(0, 0%, 30%);
+    margin: none;
+}
+.MainB{
+    display: flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: hsl(0, 0%, 90%);
+    font-size: 2rem;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(60, 100%, 70%);
+    font-size: 1.5rem;
+}
+
+#butbox{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 30vh;
+}
+
+.opkey{
+    border: none;
+    background-color: aqua;
+    font-size: 4em;
+    padding: 20px;
+    border-radius: 40%;
+    transition: 0.8ms;
+    cursor: pointer;
+}
+
+.opkeyhover{
+    background-color: hsl(180, 100%, 80%);
+    transform: scale(1.1);
+}
+
+.opkeyclick{
+    transform: scale(0.9);
+}
+
+.winbg{
+    background-color: hsl(120, 97%, 27%);
+}
+
+.losebg{
+    background-color: hsl(9, 100%, 40%);
+}
