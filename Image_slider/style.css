@@ -1,0 +1,68 @@
+body{
+    background-color: hsl(0, 0%, 10%);
+}
+#MainB{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Picbox{
+    /* position: relative; */
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+
+    border: 3px solid cyan;
+    box-shadow: 0px 0px 15px cyan;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pics{
+    overflow: hidden;
+    display: none;
+}
+
+.displayPic{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.buts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.buts button{
+    font-size: 2.5rem;
+    padding: 25px;
+    border: none;
+    background-color: hsl(0, 0%, 70%);
+    transition: .5ms;
+    box-shadow: 0px 0px 0px cyan;
+}
+
+button:hover{
+    border: 3px solid cyan;
+    box-shadow: 0px 0px 15px cyan;
+}
+
+.ss{
+    font-size: 1rem;
+    align-self: flex-end;
+}
+
+@keyframes fade{
+    from {opacity: .5;}
+    to {opacity: 1;}
+}

@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image slider</title>
-    <link rel="Stylesheets" href="style.css">
+    <link rel="Stylesheet" href="style.css">
 </head>
 <body>
+    <div id="MainB">
+        <div class="Picbox">
+            <img src="wall1.jpg" class="pics">
+            <img src="wall2.jpg" class="pics">
+            <img src="wall3.jpg" class="pics">
+        </div>
 
+        <div class="buts" >
+            <button class="prev" onclick="prevP()">&#10094</button>
+            <button class="next" onclick="nextP()">&#10095</button>
+        </div>
+        <button onclick="SlideShowpics()" class="ss">Put on SlideShow</button>
+    </div>
 
     <script src="index.js"></script>
 </body>
